@@ -1,0 +1,763 @@
+[01:53:15] [ServerMain/INFO]: [bootstrap] Running Java 21 (Java HotSpot(TM) 64-Bit Server VM 21.0.3+7-LTS-152; Oracle Corporation null) on Windows 10 10.0 (amd64)
+[01:53:15] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.5-114-ver/1.21.5@a1b3058 (2025-06-18T10:59:02Z) for Minecraft 1.21.5
+[01:53:16] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[01:53:16] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar'...
+[01:53:17] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar' in 470ms.
+[01:53:17] [ServerMain/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[01:53:17] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - TradeAndBalance (1.21.5)
+[01:53:21] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[01:53:23] [ServerMain/INFO]: Loaded 1373 recipes
+[01:53:23] [ServerMain/INFO]: Loaded 1484 advancements
+[01:53:23] [Server thread/INFO]: Starting minecraft server version 1.21.5
+[01:53:23] [Server thread/INFO]: Loading properties
+[01:53:23] [Server thread/INFO]: This server is running Paper version 1.21.5-114-ver/1.21.5@a1b3058 (2025-06-18T10:59:02Z) (Implementing API version 1.21.5-R0.1-SNAPSHOT)
+[01:53:23] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[01:53:23] [Server thread/INFO]: Using 4 threads for Netty based IO
+[01:53:23] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[01:53:24] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[01:53:24] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[01:53:24] [Server thread/INFO]: Default game type: SURVIVAL
+[01:53:24] [Server thread/INFO]: Generating keypair
+[01:53:24] [Server thread/INFO]: Starting Minecraft server on *:25565
+[01:53:24] [Server thread/INFO]: Using default channel type
+[01:53:24] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[01:53:24] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[01:53:24] [Server thread/INFO]: [TradeAndBalance] Loading server plugin TradeAndBalance v1.21.5
+[01:53:24] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[01:53:24] [Server thread/INFO]: Preparing level "world"
+[01:53:25] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[01:53:25] [Server thread/INFO]: Preparing spawn area: 0%
+[01:53:25] [Server thread/INFO]: Preparing spawn area: 2%
+[01:53:25] [Server thread/INFO]: Time elapsed: 804 ms
+[01:53:25] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[01:53:25] [Server thread/INFO]: Preparing spawn area: 0%
+[01:53:26] [Server thread/INFO]: Time elapsed: 140 ms
+[01:53:26] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[01:53:26] [Server thread/INFO]: Preparing spawn area: 0%
+[01:53:26] [Server thread/INFO]: Time elapsed: 65 ms
+[01:53:26] [Server thread/INFO]: [TradeAndBalance] Enabling TradeAndBalance v1.21.5
+[01:53:26] [Server thread/INFO]: [spark] Starting background profiler...
+[01:53:26] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows10/amd64), so the built-in Java engine will be used instead.
+[01:53:26] [Server thread/INFO]: Done preparing level "world" (1.578s)
+[01:53:26] [Server thread/INFO]: Running delayed init tasks
+[01:53:26] [Server thread/INFO]: Done (11.142s)! For help, type "help"
+[01:54:05] [User Authenticator #0/INFO]: UUID of player SHARK0822 is 3d0bac3f-6a30-424b-a078-76b6b6f2e930
+[01:54:06] [Server thread/INFO]: SHARK0822 joined the game
+[01:54:06] [Server thread/INFO]: SHARK0822[/192.168.0.1:60450] logged in with entity id 88 at ([world]-99.66319378808551, 75.0, 56.1426209789958)
+[01:54:15] [Server thread/INFO]: SHARK0822 issued server command: /pl
+[01:54:20] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance create
+[01:54:34] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance create test1 테스트1 both
+[02:04:55] [Server thread/INFO]: SHARK0822 issued server command: /rl confirm
+[02:04:55] [Server thread/INFO]: SHARK0822: Please note that this command is not supported and may cause issues when using some plugins.
+[02:04:55] [Server thread/INFO]: SHARK0822: If you encounter any issues please use the /stop command to restart your server.
+[02:04:55] [Server thread/INFO]: Using 4 threads for Netty based IO
+[02:04:55] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[02:04:55] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[02:04:55] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[02:04:55] [Server thread/INFO]: [TradeAndBalance] Disabling TradeAndBalance v1.21.5
+[02:04:56] [Server thread/INFO]: Loaded 1373 recipes
+[02:04:56] [Server thread/INFO]: Loaded 1484 advancements
+[02:04:56] [Paper Async Command Builder Thread Pool - 1/ERROR]: Caught previously unhandled exception :
+[02:04:56] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[02:04:56] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[02:04:56] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - TradeAndBalance (1.21.5)
+[02:04:56] [Paper Async Command Builder Thread Pool - 1/ERROR]: Paper Async Command Builder Thread Pool - 1
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[02:04:56] [Server thread/INFO]: [TradeAndBalance] Loading server plugin TradeAndBalance v1.21.5
+[02:04:56] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[02:04:56] [Server thread/INFO]: [TradeAndBalance] Enabling TradeAndBalance v1.21.5
+[02:04:56] [Server thread/INFO]: SHARK0822: Reload complete.
+[02:17:21] [Server thread/INFO]: SHARK0822 has made the advancement [Into Fire]
+[02:44:25] [Server thread/INFO]: SHARK0822 issued server command: /give SHARK0822 minecraft:comparator
+[02:44:25] [Server thread/INFO]: [SHARK0822: Gave 1 [Redstone Comparator] to SHARK0822]
+[03:17:59] [Server thread/INFO]: SHARK0822 issued server command: /give SHARK0822 minecraft:netherite_sword[minecraft:custom_model_data={}]
+[03:17:59] [Server thread/INFO]: [SHARK0822: Gave 1 [Netherite Sword] to SHARK0822]
+[03:18:38] [Server thread/INFO]: SHARK0822 issued server command: /give @p netherite_sword[custom_model_data={floats:[1]}] 1
+[03:18:38] [Server thread/INFO]: [SHARK0822: Gave 1 [Netherite Sword] to SHARK0822]
+[03:18:40] [Server thread/INFO]: SHARK0822 issued server command: /give @p netherite_sword[custom_model_data={floats:[2]}] 1
+[03:18:40] [Server thread/INFO]: [SHARK0822: Gave 1 [Netherite Sword] to SHARK0822]
+[03:18:51] [Server thread/INFO]: SHARK0822 issued server command: /give @p netherite_sword[custom_model_data={float:[2]}] 1
+[03:18:51] [Server thread/INFO]: [SHARK0822: Gave 1 [Netherite Sword] to SHARK0822]
+[03:25:10] [Server thread/INFO]: SHARK0822 issued server command: /give @p netherite_sword[item_model="snk/yoru"] 1
+[03:25:10] [Server thread/INFO]: [SHARK0822: Gave 1 [Netherite Sword] to SHARK0822]
+[03:25:20] [Server thread/INFO]: SHARK0822 issued server command: /give @p netherite_sword[item_model="models/snk/yoru"] 1
+[03:25:20] [Server thread/INFO]: [SHARK0822: Gave 1 [Netherite Sword] to SHARK0822]
+[03:27:54] [Server thread/INFO]: SHARK0822 issued server command: /give @p netherite_sword[item_model="snk/yoru"] 1
+[03:27:54] [Server thread/INFO]: [SHARK0822: Gave 1 [Netherite Sword] to SHARK0822]
+[03:29:52] [Server thread/INFO]: SHARK0822 issued server command: /give @p netherite_sword[item_model="snk:snk/yoru"] 1
+[03:29:52] [Server thread/INFO]: [SHARK0822: Gave 1 [Netherite Sword] to SHARK0822]
+[03:30:15] [Server thread/INFO]: SHARK0822 issued server command: /give @p netherite_sword[item_model="snk:item/snk/yoru"] 1
+[03:30:15] [Server thread/INFO]: [SHARK0822: Gave 1 [Netherite Sword] to SHARK0822]
+[03:30:24] [Server thread/INFO]: SHARK0822 issued server command: /give @p netherite_sword[item_model="snk:item/snk/yoru"] 1
+[03:30:24] [Server thread/INFO]: [SHARK0822: Gave 1 [Netherite Sword] to SHARK0822]
+[03:30:39] [Server thread/INFO]: SHARK0822 issued server command: /give @p netherite_sword[item_model="snk:snk/yoru"] 1
+[03:30:39] [Server thread/INFO]: [SHARK0822: Gave 1 [Netherite Sword] to SHARK0822]
+[03:33:45] [Server thread/INFO]: SHARK0822 issued server command: /give @p netherite_sword[item_model="snk:yoru"] 1
+[03:33:45] [Server thread/INFO]: [SHARK0822: Gave 1 [Netherite Sword] to SHARK0822]
+[03:38:05] [Server thread/INFO]: SHARK0822 issued server command: /playsound custom.staff.launching
+[03:38:05] [Server thread/INFO]: [SHARK0822: Played sound minecraft:custom.staff.launching to SHARK0822]
+[03:38:13] [Server thread/INFO]: SHARK0822 issued server command: /playsound custom:staff.launching
+[03:38:13] [Server thread/INFO]: [SHARK0822: Played sound custom:staff.launching to SHARK0822]
+[03:38:41] [Server thread/INFO]: SHARK0822 issued server command: /playsound custom:custom.staff.launching
+[03:38:41] [Server thread/INFO]: [SHARK0822: Played sound custom:custom.staff.launching to SHARK0822]
+[03:41:11] [Server thread/INFO]: SHARK0822 issued server command: /playsound minecraft:staff.launching
+[03:41:11] [Server thread/INFO]: [SHARK0822: Played sound minecraft:staff.launching to SHARK0822]
+[03:41:14] [Server thread/INFO]: SHARK0822 issued server command: /playsound minecraft:staff.launching
+[03:41:14] [Server thread/INFO]: [SHARK0822: Played sound minecraft:staff.launching to SHARK0822]
+[04:03:23] [Server thread/INFO]: SHARK0822 issued server command: /rl confirm
+[04:03:23] [Server thread/INFO]: SHARK0822: Please note that this command is not supported and may cause issues when using some plugins.
+[04:03:23] [Server thread/INFO]: SHARK0822: If you encounter any issues please use the /stop command to restart your server.
+[04:03:23] [Server thread/INFO]: Using 4 threads for Netty based IO
+[04:03:23] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[04:03:23] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[04:03:23] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[04:03:23] [Server thread/INFO]: [TradeAndBalance] Disabling TradeAndBalance v1.21.5
+[04:03:24] [Server thread/INFO]: Loaded 1373 recipes
+[04:03:24] [Server thread/INFO]: Loaded 1484 advancements
+[04:03:24] [Paper Async Command Builder Thread Pool - 0/ERROR]: Caught previously unhandled exception :
+[04:03:24] [Paper Async Command Builder Thread Pool - 0/ERROR]: Paper Async Command Builder Thread Pool - 0
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[04:03:24] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[04:03:24] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar'...
+[04:03:24] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar' in 248ms.
+[04:03:24] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[04:03:24] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - TradeAndBalance (1.21.5)
+[04:03:24] [Server thread/INFO]: [TradeAndBalance] Loading server plugin TradeAndBalance v1.21.5
+[04:03:24] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[04:03:24] [Server thread/INFO]: [TradeAndBalance] Enabling TradeAndBalance v1.21.5
+[04:03:24] [Server thread/INFO]: SHARK0822: Reload complete.
+[04:03:31] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance create
+[04:03:49] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance create test1 테스트1 both
+[04:03:54] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open
+[04:04:13] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test1
+[04:04:19] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test1 admin
+[04:04:19] [Server thread/ERROR]: Command exception: /tradeandbalance open test1 admin
+org.bukkit.command.CommandException: Unhandled exception executing command 'tradeandbalance' in plugin TradeAndBalance v1.21.5
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:47) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.command.brigadier.bukkit.BukkitCommandNode$BukkitBrigCommand.run(BukkitCommandNode.java:83) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.3.10.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:105) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:449) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:357) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:347) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:341) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2269) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$12(ServerGamePacketListenerImpl.java:2242) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:155) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1446) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:175) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:129) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1426) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1420) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:139) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.managedBlock(MinecraftServer.java:1377) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1385) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1262) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:308) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.NullPointerException: Cannot invoke "me.shark0822.tradeAndBalance.shop.ShopPage.getItems()" because "page" is null
+	at TradeAndBalance-1.21.5-1751828604468.jar/me.shark0822.tradeAndBalance.gui.EditorGUI.open(EditorGUI.java:29) ~[TradeAndBalance-1.21.5-1751828604468.jar:?]
+	at TradeAndBalance-1.21.5-1751828604468.jar/me.shark0822.tradeAndBalance.command.TnbCommand.handleOpen(TnbCommand.java:148) ~[TradeAndBalance-1.21.5-1751828604468.jar:?]
+	at TradeAndBalance-1.21.5-1751828604468.jar/me.shark0822.tradeAndBalance.command.TnbCommand.onCommand(TnbCommand.java:40) ~[TradeAndBalance-1.21.5-1751828604468.jar:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	... 27 more
+[04:14:07] [Server thread/INFO]: SHARK0822 issued server command: /rl confirm
+[04:14:07] [Server thread/INFO]: SHARK0822: Please note that this command is not supported and may cause issues when using some plugins.
+[04:14:07] [Server thread/INFO]: SHARK0822: If you encounter any issues please use the /stop command to restart your server.
+[04:14:07] [Server thread/INFO]: Using 4 threads for Netty based IO
+[04:14:07] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[04:14:07] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[04:14:07] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[04:14:07] [Server thread/INFO]: [TradeAndBalance] Disabling TradeAndBalance v1.21.5
+[04:14:08] [Server thread/INFO]: Loaded 1373 recipes
+[04:14:08] [Server thread/INFO]: Loaded 1484 advancements
+[04:14:08] [Paper Async Command Builder Thread Pool - 2/ERROR]: Caught previously unhandled exception :
+[04:14:08] [Paper Async Command Builder Thread Pool - 2/ERROR]: Paper Async Command Builder Thread Pool - 2
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[04:14:08] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[04:14:08] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar'...
+[04:14:08] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar' in 103ms.
+[04:14:08] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[04:14:08] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - TradeAndBalance (1.21.5)
+[04:14:08] [Server thread/INFO]: [TradeAndBalance] Loading server plugin TradeAndBalance v1.21.5
+[04:14:08] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[04:14:08] [Server thread/INFO]: [TradeAndBalance] Enabling TradeAndBalance v1.21.5
+[04:14:08] [Server thread/INFO]: SHARK0822: Reload complete.
+[04:14:08] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test1 admin
+[04:14:08] [Server thread/ERROR]: Command exception: /tradeandbalance open test1 admin
+org.bukkit.command.CommandException: Unhandled exception executing command 'tradeandbalance' in plugin TradeAndBalance v1.21.5
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:47) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.command.brigadier.bukkit.BukkitCommandNode$BukkitBrigCommand.run(BukkitCommandNode.java:83) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.3.10.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:105) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:449) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:357) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:347) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:341) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2269) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$12(ServerGamePacketListenerImpl.java:2242) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:155) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1446) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:175) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:129) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1426) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1420) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:139) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.managedBlock(MinecraftServer.java:1377) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1385) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1262) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:308) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.NullPointerException: Cannot invoke "me.shark0822.tradeAndBalance.shop.page.ShopPage.getItems()" because "page" is null
+	at TradeAndBalance-1.21.5-1751829248110.jar/me.shark0822.tradeAndBalance.gui.EditorGUI.open(EditorGUI.java:25) ~[TradeAndBalance-1.21.5-1751829248110.jar:?]
+	at TradeAndBalance-1.21.5-1751829248110.jar/me.shark0822.tradeAndBalance.command.TnbCommand.handleOpen(TnbCommand.java:148) ~[TradeAndBalance-1.21.5-1751829248110.jar:?]
+	at TradeAndBalance-1.21.5-1751829248110.jar/me.shark0822.tradeAndBalance.command.TnbCommand.onCommand(TnbCommand.java:40) ~[TradeAndBalance-1.21.5-1751829248110.jar:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	... 27 more
+[04:18:31] [Server thread/INFO]: SHARK0822 issued server command: /rl confirm
+[04:18:31] [Server thread/INFO]: SHARK0822: Please note that this command is not supported and may cause issues when using some plugins.
+[04:18:31] [Server thread/INFO]: SHARK0822: If you encounter any issues please use the /stop command to restart your server.
+[04:18:31] [Server thread/INFO]: Using 4 threads for Netty based IO
+[04:18:31] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[04:18:31] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[04:18:31] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[04:18:31] [Server thread/INFO]: [TradeAndBalance] Disabling TradeAndBalance v1.21.5
+[04:18:31] [Server thread/INFO]: Loaded 1373 recipes
+[04:18:31] [Server thread/INFO]: Loaded 1484 advancements
+[04:18:31] [Paper Async Command Builder Thread Pool - 3/ERROR]: Caught previously unhandled exception :
+[04:18:31] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[04:18:31] [Paper Async Command Builder Thread Pool - 3/ERROR]: Paper Async Command Builder Thread Pool - 3
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[04:18:31] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar'...
+[04:18:31] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar' in 117ms.
+[04:18:31] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[04:18:31] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - TradeAndBalance (1.21.5)
+[04:18:31] [Server thread/INFO]: [TradeAndBalance] Loading server plugin TradeAndBalance v1.21.5
+[04:18:31] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[04:18:31] [Server thread/INFO]: [TradeAndBalance] Enabling TradeAndBalance v1.21.5
+[04:18:31] [Server thread/INFO]: SHARK0822: Reload complete.
+[04:18:32] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test1 admin
+[04:21:02] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance create test1 테스트1 both
+[04:27:39] [Server thread/INFO]: SHARK0822 issued server command: /rl confirm
+[04:27:39] [Server thread/INFO]: SHARK0822: Please note that this command is not supported and may cause issues when using some plugins.
+[04:27:39] [Server thread/INFO]: SHARK0822: If you encounter any issues please use the /stop command to restart your server.
+[04:27:39] [Server thread/INFO]: Using 4 threads for Netty based IO
+[04:27:39] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[04:27:39] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[04:27:39] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[04:27:39] [Server thread/INFO]: [TradeAndBalance] Disabling TradeAndBalance v1.21.5
+[04:27:40] [Server thread/INFO]: Loaded 1373 recipes
+[04:27:40] [Server thread/INFO]: Loaded 1484 advancements
+[04:27:40] [Paper Async Command Builder Thread Pool - 4/ERROR]: Caught previously unhandled exception :
+[04:27:40] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[04:27:40] [Paper Async Command Builder Thread Pool - 4/ERROR]: Paper Async Command Builder Thread Pool - 4
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[04:27:40] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar'...
+[04:27:40] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar' in 93ms.
+[04:27:40] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[04:27:40] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - TradeAndBalance (1.21.5)
+[04:27:40] [Server thread/INFO]: [TradeAndBalance] Loading server plugin TradeAndBalance v1.21.5
+[04:27:40] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[04:27:40] [Server thread/INFO]: [TradeAndBalance] Enabling TradeAndBalance v1.21.5
+[04:27:40] [Server thread/INFO]: SHARK0822: Reload complete.
+[04:27:41] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance create test1 테스트1 both
+[04:27:45] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test1 admin
+[04:28:30] [Server thread/INFO]: SHARK0822 issued server command: /rl
+[04:28:30] [Server thread/INFO]: SHARK0822: Are you sure you wish to reload your server? Doing so may cause bugs and memory leaks. It is recommended to restart instead of using /reload. To confirm, please type /reload confirm
+[04:28:32] [Server thread/INFO]: SHARK0822 issued server command: /rl confirm
+[04:28:32] [Server thread/INFO]: SHARK0822: Please note that this command is not supported and may cause issues when using some plugins.
+[04:28:32] [Server thread/INFO]: SHARK0822: If you encounter any issues please use the /stop command to restart your server.
+[04:28:32] [Server thread/INFO]: Using 4 threads for Netty based IO
+[04:28:32] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[04:28:32] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[04:28:32] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[04:28:32] [Server thread/INFO]: [TradeAndBalance] Disabling TradeAndBalance v1.21.5
+[04:28:33] [Server thread/INFO]: Loaded 1373 recipes
+[04:28:33] [Server thread/INFO]: Loaded 1484 advancements
+[04:28:33] [Paper Async Command Builder Thread Pool - 5/ERROR]: Caught previously unhandled exception :
+[04:28:33] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[04:28:33] [Paper Async Command Builder Thread Pool - 5/ERROR]: Paper Async Command Builder Thread Pool - 5
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[04:28:33] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar'...
+[04:28:33] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar' in 105ms.
+[04:28:33] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[04:28:33] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - TradeAndBalance (1.21.5)
+[04:28:33] [Server thread/INFO]: [TradeAndBalance] Loading server plugin TradeAndBalance v1.21.5
+[04:28:33] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[04:28:33] [Server thread/INFO]: [TradeAndBalance] Enabling TradeAndBalance v1.21.5
+[04:28:33] [Server thread/INFO]: SHARK0822: Reload complete.
+[04:28:34] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test1 admin
+[04:29:01] [Server thread/INFO]: SHARK0822 issued server command: /rl confirm
+[04:29:01] [Server thread/INFO]: SHARK0822: Please note that this command is not supported and may cause issues when using some plugins.
+[04:29:01] [Server thread/INFO]: SHARK0822: If you encounter any issues please use the /stop command to restart your server.
+[04:29:01] [Server thread/INFO]: Using 4 threads for Netty based IO
+[04:29:01] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[04:29:01] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[04:29:01] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[04:29:01] [Server thread/INFO]: [TradeAndBalance] Disabling TradeAndBalance v1.21.5
+[04:29:01] [Server thread/INFO]: Loaded 1373 recipes
+[04:29:01] [Server thread/INFO]: Loaded 1484 advancements
+[04:29:01] [Paper Async Command Builder Thread Pool - 6/ERROR]: Caught previously unhandled exception :
+[04:29:01] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[04:29:01] [Paper Async Command Builder Thread Pool - 6/ERROR]: Paper Async Command Builder Thread Pool - 6
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[04:29:01] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar'...
+[04:29:01] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar' in 117ms.
+[04:29:01] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[04:29:01] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - TradeAndBalance (1.21.5)
+[04:29:01] [Server thread/INFO]: [TradeAndBalance] Loading server plugin TradeAndBalance v1.21.5
+[04:29:01] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[04:29:01] [Server thread/INFO]: [TradeAndBalance] Enabling TradeAndBalance v1.21.5
+[04:29:01] [Server thread/INFO]: SHARK0822: Reload complete.
+[04:29:02] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test1 admin
+[04:32:01] [Server thread/INFO]: SHARK0822 issued server command: /rl
+[04:32:01] [Server thread/INFO]: SHARK0822: Are you sure you wish to reload your server? Doing so may cause bugs and memory leaks. It is recommended to restart instead of using /reload. To confirm, please type /reload confirm
+[04:32:04] [Server thread/INFO]: SHARK0822 issued server command: /rl confirm
+[04:32:04] [Server thread/INFO]: SHARK0822: Please note that this command is not supported and may cause issues when using some plugins.
+[04:32:04] [Server thread/INFO]: SHARK0822: If you encounter any issues please use the /stop command to restart your server.
+[04:32:04] [Server thread/INFO]: Using 4 threads for Netty based IO
+[04:32:04] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[04:32:04] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[04:32:04] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[04:32:04] [Server thread/INFO]: [TradeAndBalance] Disabling TradeAndBalance v1.21.5
+[04:32:04] [Server thread/INFO]: Loaded 1373 recipes
+[04:32:04] [Server thread/INFO]: Loaded 1484 advancements
+[04:32:04] [Paper Async Command Builder Thread Pool - 7/ERROR]: Caught previously unhandled exception :
+[04:32:04] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[04:32:04] [Paper Async Command Builder Thread Pool - 7/ERROR]: Paper Async Command Builder Thread Pool - 7
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[04:32:04] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar'...
+[04:32:04] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar' in 90ms.
+[04:32:04] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[04:32:04] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - TradeAndBalance (1.21.5)
+[04:32:04] [Server thread/INFO]: [TradeAndBalance] Loading server plugin TradeAndBalance v1.21.5
+[04:32:04] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[04:32:04] [Server thread/INFO]: [TradeAndBalance] Enabling TradeAndBalance v1.21.5
+[04:32:04] [Server thread/INFO]: SHARK0822: Reload complete.
+[04:32:06] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test1 admin
+[04:33:30] [Server thread/INFO]: SHARK0822 issued server command: /rl confirm
+[04:33:30] [Server thread/INFO]: SHARK0822: Please note that this command is not supported and may cause issues when using some plugins.
+[04:33:30] [Server thread/INFO]: SHARK0822: If you encounter any issues please use the /stop command to restart your server.
+[04:33:30] [Server thread/INFO]: Using 4 threads for Netty based IO
+[04:33:30] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[04:33:30] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[04:33:30] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[04:33:31] [Server thread/INFO]: [TradeAndBalance] Disabling TradeAndBalance v1.21.5
+[04:33:31] [Server thread/INFO]: Loaded 1373 recipes
+[04:33:31] [Server thread/INFO]: Loaded 1484 advancements
+[04:33:31] [Paper Async Command Builder Thread Pool - 8/ERROR]: Caught previously unhandled exception :
+[04:33:31] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[04:33:31] [Paper Async Command Builder Thread Pool - 8/ERROR]: Paper Async Command Builder Thread Pool - 8
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[04:33:31] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar'...
+[04:33:31] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar' in 111ms.
+[04:33:31] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[04:33:31] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - TradeAndBalance (1.21.5)
+[04:33:31] [Server thread/INFO]: [TradeAndBalance] Loading server plugin TradeAndBalance v1.21.5
+[04:33:31] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[04:33:31] [Server thread/INFO]: [TradeAndBalance] Enabling TradeAndBalance v1.21.5
+[04:33:31] [Server thread/INFO]: SHARK0822: Reload complete.
+[04:33:31] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test1 admin
+[04:36:09] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test1 SHARK0822 admin
+[04:36:14] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test1 SHARK0822
+[04:36:38] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test2 SHARK0822 admin
+[04:38:13] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test2 SHARK0822 admin
+[04:38:15] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test1 SHARK0822
+[04:38:19] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test1 SHARK0822 admin
+[04:38:20] [Server thread/INFO]: SHARK0822 issued server command: /ability active
+[04:40:31] [Server thread/INFO]: SHARK0822 issued server command: /rl confirm
+[04:40:31] [Server thread/INFO]: SHARK0822: Please note that this command is not supported and may cause issues when using some plugins.
+[04:40:31] [Server thread/INFO]: SHARK0822: If you encounter any issues please use the /stop command to restart your server.
+[04:40:31] [Server thread/INFO]: Using 4 threads for Netty based IO
+[04:40:31] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[04:40:31] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[04:40:31] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[04:40:31] [Server thread/INFO]: [TradeAndBalance] Disabling TradeAndBalance v1.21.5
+[04:40:31] [Server thread/INFO]: Loaded 1373 recipes
+[04:40:31] [Server thread/INFO]: Loaded 1484 advancements
+[04:40:31] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[04:40:31] [Paper Async Command Builder Thread Pool - 9/ERROR]: Caught previously unhandled exception :
+[04:40:31] [Paper Async Command Builder Thread Pool - 9/ERROR]: Paper Async Command Builder Thread Pool - 9
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.getNode(HashMap.java:576) ~[?:?]
+	at java.base/java.util.HashMap.get(HashMap.java:564) ~[?:?]
+	at net.minecraft.commands.Commands.fillUsableCommands(Commands.java:551) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.fillUsableCommands(Commands.java:588) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:489) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[04:40:31] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar'...
+[04:40:32] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar' in 86ms.
+[04:40:32] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[04:40:32] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - TradeAndBalance (1.21.5)
+[04:40:32] [Server thread/INFO]: [TradeAndBalance] Loading server plugin TradeAndBalance v1.21.5
+[04:40:32] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[04:40:32] [Server thread/INFO]: [TradeAndBalance] Enabling TradeAndBalance v1.21.5
+[04:40:32] [Server thread/INFO]: SHARK0822: Reload complete.
+[04:40:32] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test1 SHARK0822 admin
+[04:41:13] [Server thread/INFO]: SHARK0822 issued server command: /rl confirm
+[04:41:13] [Server thread/INFO]: SHARK0822: Please note that this command is not supported and may cause issues when using some plugins.
+[04:41:13] [Server thread/INFO]: SHARK0822: If you encounter any issues please use the /stop command to restart your server.
+[04:41:13] [Server thread/INFO]: Using 4 threads for Netty based IO
+[04:41:13] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[04:41:13] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[04:41:13] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[04:41:13] [Server thread/INFO]: [TradeAndBalance] Disabling TradeAndBalance v1.21.5
+[04:41:13] [Server thread/INFO]: Loaded 1373 recipes
+[04:41:13] [Server thread/INFO]: Loaded 1484 advancements
+[04:41:13] [Paper Async Command Builder Thread Pool - 10/ERROR]: Caught previously unhandled exception :
+[04:41:13] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[04:41:13] [Paper Async Command Builder Thread Pool - 10/ERROR]: Paper Async Command Builder Thread Pool - 10
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[04:41:13] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar'...
+[04:41:13] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar' in 86ms.
+[04:41:13] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[04:41:13] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - TradeAndBalance (1.21.5)
+[04:41:13] [Server thread/INFO]: [TradeAndBalance] Loading server plugin TradeAndBalance v1.21.5
+[04:41:13] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[04:41:13] [Server thread/INFO]: [TradeAndBalance] Enabling TradeAndBalance v1.21.5
+[04:41:13] [Server thread/INFO]: SHARK0822: Reload complete.
+[04:41:14] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test1 SHARK0822 admin
+[04:41:53] [Server thread/INFO]: SHARK0822 issued server command: /rl confirm
+[04:41:53] [Server thread/INFO]: SHARK0822: Please note that this command is not supported and may cause issues when using some plugins.
+[04:41:53] [Server thread/INFO]: SHARK0822: If you encounter any issues please use the /stop command to restart your server.
+[04:41:53] [Server thread/INFO]: Using 4 threads for Netty based IO
+[04:41:53] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[04:41:53] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[04:41:53] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[04:41:53] [Server thread/INFO]: [TradeAndBalance] Disabling TradeAndBalance v1.21.5
+[04:41:53] [Server thread/INFO]: Loaded 1373 recipes
+[04:41:53] [Server thread/INFO]: Loaded 1484 advancements
+[04:41:53] [Paper Async Command Builder Thread Pool - 11/ERROR]: Caught previously unhandled exception :
+[04:41:53] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[04:41:53] [Paper Async Command Builder Thread Pool - 11/ERROR]: Paper Async Command Builder Thread Pool - 11
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[04:41:53] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar'...
+[04:41:54] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar' in 91ms.
+[04:41:54] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[04:41:54] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - TradeAndBalance (1.21.5)
+[04:41:54] [Server thread/INFO]: [TradeAndBalance] Loading server plugin TradeAndBalance v1.21.5
+[04:41:54] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[04:41:54] [Server thread/INFO]: [TradeAndBalance] Enabling TradeAndBalance v1.21.5
+[04:41:54] [Server thread/INFO]: SHARK0822: Reload complete.
+[04:41:54] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test1 SHARK0822 admin
+[04:42:05] [Server thread/INFO]: SHARK0822 issued server command: /rl confirm
+[04:42:05] [Server thread/INFO]: SHARK0822: Please note that this command is not supported and may cause issues when using some plugins.
+[04:42:05] [Server thread/INFO]: SHARK0822: If you encounter any issues please use the /stop command to restart your server.
+[04:42:05] [Server thread/INFO]: Using 4 threads for Netty based IO
+[04:42:05] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[04:42:05] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[04:42:05] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[04:42:05] [Server thread/INFO]: [TradeAndBalance] Disabling TradeAndBalance v1.21.5
+[04:42:05] [Server thread/INFO]: Loaded 1373 recipes
+[04:42:05] [Server thread/INFO]: Loaded 1484 advancements
+[04:42:05] [Paper Async Command Builder Thread Pool - 12/ERROR]: Caught previously unhandled exception :
+[04:42:05] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[04:42:05] [Paper Async Command Builder Thread Pool - 12/ERROR]: Paper Async Command Builder Thread Pool - 12
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[04:42:05] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar'...
+[04:42:05] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar' in 97ms.
+[04:42:05] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[04:42:05] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - TradeAndBalance (1.21.5)
+[04:42:05] [Server thread/INFO]: [TradeAndBalance] Loading server plugin TradeAndBalance v1.21.5
+[04:42:05] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[04:42:05] [Server thread/INFO]: [TradeAndBalance] Enabling TradeAndBalance v1.21.5
+[04:42:05] [Server thread/INFO]: SHARK0822: Reload complete.
+[04:42:05] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test1 SHARK0822 admin
+[04:42:13] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test1 hiheppop admin
+[04:42:15] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test1 SHARK0822 admin
+[04:42:22] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test1
+[04:42:28] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test1 SHARK0822 admin
+[04:43:57] [Server thread/INFO]: SHARK0822 issued server command: /rl
+[04:43:57] [Server thread/INFO]: SHARK0822: Are you sure you wish to reload your server? Doing so may cause bugs and memory leaks. It is recommended to restart instead of using /reload. To confirm, please type /reload confirm
+[04:44:02] [Server thread/INFO]: SHARK0822 issued server command: /rl confirm
+[04:44:02] [Server thread/INFO]: SHARK0822: Please note that this command is not supported and may cause issues when using some plugins.
+[04:44:02] [Server thread/INFO]: SHARK0822: If you encounter any issues please use the /stop command to restart your server.
+[04:44:02] [Server thread/INFO]: Using 4 threads for Netty based IO
+[04:44:02] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[04:44:02] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[04:44:02] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[04:44:02] [Server thread/INFO]: [TradeAndBalance] Disabling TradeAndBalance v1.21.5
+[04:44:03] [Server thread/INFO]: Loaded 1373 recipes
+[04:44:03] [Server thread/INFO]: Loaded 1484 advancements
+[04:44:03] [Paper Async Command Builder Thread Pool - 13/ERROR]: Caught previously unhandled exception :
+[04:44:03] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[04:44:03] [Paper Async Command Builder Thread Pool - 13/ERROR]: Paper Async Command Builder Thread Pool - 13
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[04:44:03] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar'...
+[04:44:03] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar' in 88ms.
+[04:44:03] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[04:44:03] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - TradeAndBalance (1.21.5)
+[04:44:03] [Server thread/INFO]: [TradeAndBalance] Loading server plugin TradeAndBalance v1.21.5
+[04:44:03] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[04:44:03] [Server thread/INFO]: [TradeAndBalance] Enabling TradeAndBalance v1.21.5
+[04:44:03] [Server thread/INFO]: SHARK0822: Reload complete.
+[04:44:04] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance
+[04:44:10] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance cra
+[04:44:23] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test1 SHARK0822 admin
+[04:45:00] [Server thread/INFO]: SHARK0822 issued server command: /rl confirm
+[04:45:00] [Server thread/INFO]: SHARK0822: Please note that this command is not supported and may cause issues when using some plugins.
+[04:45:00] [Server thread/INFO]: SHARK0822: If you encounter any issues please use the /stop command to restart your server.
+[04:45:00] [Server thread/INFO]: Using 4 threads for Netty based IO
+[04:45:00] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[04:45:00] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[04:45:00] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[04:45:00] [Server thread/INFO]: [TradeAndBalance] Disabling TradeAndBalance v1.21.5
+[04:45:01] [Server thread/INFO]: Loaded 1373 recipes
+[04:45:01] [Server thread/INFO]: Loaded 1484 advancements
+[04:45:01] [Paper Async Command Builder Thread Pool - 14/ERROR]: Caught previously unhandled exception :
+[04:45:01] [Paper Async Command Builder Thread Pool - 14/ERROR]: Paper Async Command Builder Thread Pool - 14
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1023) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1058) ~[?:?]
+	at java.base/java.util.LinkedHashMap$LinkedEntryIterator.next(LinkedHashMap.java:1055) ~[?:?]
+	at java.base/java.util.AbstractMap.hashCode(AbstractMap.java:527) ~[?:?]
+	at com.mojang.brigadier.tree.CommandNode.hashCode(CommandNode.java:155) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.HashMap.hash(HashMap.java:338) ~[?:?]
+	at java.base/java.util.HashMap.put(HashMap.java:618) ~[?:?]
+	at net.minecraft.commands.Commands.sendAsync(Commands.java:488) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.lambda$sendCommands$6(Commands.java:470) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[04:45:01] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[04:45:01] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar'...
+[04:45:01] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'D:\마인크래프트 모딩\RE_SNK\TradeAndBalance\build\libs\TradeAndBalance-1.21.5.jar' in 84ms.
+[04:45:01] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[04:45:01] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - TradeAndBalance (1.21.5)
+[04:45:01] [Server thread/INFO]: [TradeAndBalance] Loading server plugin TradeAndBalance v1.21.5
+[04:45:01] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[04:45:01] [Server thread/INFO]: [TradeAndBalance] Enabling TradeAndBalance v1.21.5
+[04:45:01] [Server thread/INFO]: SHARK0822: Reload complete.
+[04:45:01] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test1 SHARK0822 admin
+[04:45:25] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance create test2 &RED테스트2 buy
+[04:45:30] [Server thread/INFO]: SHARK0822 issued server command: /tradeandbalance open test2 SHARK0822 admin
+[04:45:46] [Server thread/INFO]: SHARK0822 issued server command: /stop
+[04:45:46] [Server thread/INFO]: [SHARK0822: Stopping the server]
+[04:45:46] [Server thread/INFO]: Stopping server
+[04:45:46] [Server thread/INFO]: [TradeAndBalance] Disabling TradeAndBalance v1.21.5
+[04:45:46] [Server thread/INFO]: Saving players
+[04:45:46] [Server thread/INFO]: SHARK0822 lost connection: Server closed
+[04:45:46] [Server thread/INFO]: SHARK0822 left the game
+[04:45:46] [Server thread/INFO]: Saving worlds
+[04:45:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[04:45:46] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[04:45:46] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[04:45:46] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[04:45:46] [Server thread/INFO]: [ChunkHolderManager] Saved 731 block chunks, 110 entity chunks, 0 poi chunks in world 'world' in 0.19s
+[04:45:46] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[04:45:46] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[04:45:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[04:45:46] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[04:45:46] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[04:45:46] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[04:45:46] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0.00s
+[04:45:46] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
+[04:45:46] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
+[04:45:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[04:45:46] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[04:45:46] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[04:45:46] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[04:45:46] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.01s
+[04:45:46] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
+[04:45:46] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
+[04:45:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[04:45:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[04:45:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[04:45:46] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[04:45:46] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
+[04:45:46] [Server thread/INFO]: All RegionFile I/O tasks to complete
+[04:45:46] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[04:45:46] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...

@@ -1,0 +1,7 @@
+shops:
+  test2:
+    shopName: '&c테스트2'
+    tradeType: BUY
+  test1:
+    shopName: 테스트1
+    tradeType: BOTH
