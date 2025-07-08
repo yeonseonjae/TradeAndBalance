@@ -11,9 +11,7 @@ import org.bukkit.inventory.ItemStack;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Comparator;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 
 public class DataManager {
 
@@ -35,6 +33,7 @@ public class DataManager {
     }
 
     public void saveShops(ShopManager shopManager) {
+        System.out.println("[DEBUG] Saving shops...");
         shopConfig.set("shops", null); // 초기화
 
         for (Map.Entry<String, Shop> entry : shopManager.getAllShops().entrySet()) {
@@ -42,47 +41,65 @@ public class DataManager {
             Shop shop = entry.getValue();
             String path = "shops." + shopID;
 
+            System.out.println("[DEBUG] Saving shop: " + shopID + " (" + shop.getShopName() + ")");
+
             shopConfig.set(path + ".shopName", shop.getShopName());
             shopConfig.set(path + ".tradeType", shop.getTradeType().name());
-
             UUID mobUUID = shop.getLinkedEntityUUID();
             shopConfig.set(path + ".linkedMobUUID", mobUUID == null ? null : mobUUID.toString());
 
-            PageNode node = shop.getCurrentPageNode();
-            if (node == null) continue;
+            PageNode node = shop.getHead();
+            if (node == null) {
+                System.out.println("[DEBUG] Skipping shop (no pages): " + shopID);
+                continue;
+            }
 
+            ConfigurationSection pagesSection = shopConfig.createSection(path + ".pages");
+            int pageIndex = 0;
             PageNode start = node;
             do {
-                int pageIndex = node.getIndex();
                 ShopPage page = node.getPage();
-                for (int i = 0; i < page.getItems().size(); i++) {
-                    ShopItem item = page.getItems().get(i);
-                    String itemPath = path + ".pages." + pageIndex + ".items." + i;
+                System.out.println("[DEBUG] Saving page index: " + pageIndex + ", items: " + page.getItems().size());
 
-                    shopConfig.set(itemPath + ".item", item.getItemStack());
-                    shopConfig.set(itemPath + ".price", item.getPrice());
-                    shopConfig.set(itemPath + ".limitType", item.getLimitType().name());
-                    shopConfig.set(itemPath + ".limitAmount", item.getLimitAmount());
+                ConfigurationSection pageSection = pagesSection.createSection(String.valueOf(pageIndex));
+                List<Map<String, Object>> items = new ArrayList<>();
+                for (ShopItem item : page.getItems()) {
+                    Map<String, Object> itemData = new HashMap<>();
+                    itemData.put("item", item.getItemStack().serialize());
+                    itemData.put("price", item.getPrice());
+                    itemData.put("limitType", item.getLimitType().name());
+                    itemData.put("limitAmount", item.getLimitAmount());
+                    items.add(itemData);
                 }
-                node = node.getNext();
-            } while (node != null && node != start);
-        }
+                pageSection.set("items", items);
 
-        try {
-            shopConfig.save(shopFile);
-        } catch (IOException e) {
-            e.printStackTrace();
+                node = node.getNext();
+                pageIndex++;
+            } while (node != null && node != start);
+
+            try {
+                shopConfig.save(shopFile);
+                System.out.println("[DEBUG] Shops saved successfully.");
+            } catch (IOException e) {
+                System.out.println("[ERROR] Failed to save shops:");
+                e.printStackTrace();
+            }
         }
     }
 
     public void loadShops(ShopManager shopManager) {
+        System.out.println("[DEBUG] Loading shops...");
+
         ConfigurationSection shopSection = shopConfig.getConfigurationSection("shops");
-        if (shopSection == null) return;
+        if (shopSection == null) {
+            System.out.println("[DEBUG] No shop data found.");
+            return;
+        }
 
         for (String shopID : shopSection.getKeys(false)) {
             String path = "shops." + shopID;
 
-            String shopName = shopConfig.getString(path + ".shopName", "알 수 없음");
+            String shopName = shopConfig.getString(path + ".shopName", "Unknown");
             TradeType tradeType = TradeType.valueOf(shopConfig.getString(path + ".tradeType", "BOTH"));
 
             String uuidString = shopConfig.getString(path + ".linkedMobUUID");
@@ -91,14 +108,17 @@ public class DataManager {
             Shop shop = new Shop(shopID, shopName, tradeType);
             shop.setLinkedEntityUUID(mobUUID);
 
+            System.out.println("[DEBUG] Loading shop: " + shopID + " (" + shopName + ")");
+
             ConfigurationSection pageSection = shopConfig.getConfigurationSection(path + ".pages");
             if (pageSection != null) {
-                // 페이지 번호 순서대로 정렬
                 pageSection.getKeys(false).stream()
                         .sorted(Comparator.comparingInt(Integer::parseInt))
                         .forEach(pageKey -> {
                             ConfigurationSection itemsSection = shopConfig.getConfigurationSection(path + ".pages." + pageKey + ".items");
                             ShopPage page = new ShopPage();
+
+                            System.out.println(" - Loading page index: " + pageKey);
 
                             if (itemsSection != null) {
                                 for (String itemKey : itemsSection.getKeys(false)) {
@@ -120,5 +140,7 @@ public class DataManager {
 
             shopManager.registerShop(shopID, shop);
         }
+
+        System.out.println("[DEBUG] Shop loading completed.");
     }
 }

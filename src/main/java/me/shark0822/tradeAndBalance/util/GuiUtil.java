@@ -1,5 +1,6 @@
 package me.shark0822.tradeAndBalance.util;
 
+import me.shark0822.tradeAndBalance.shop.Shop;
 import me.shark0822.tradeAndBalance.shop.type.TradeType;
 import net.kyori.adventure.text.Component;
 import org.bukkit.Material;
@@ -12,7 +13,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 public class GuiUtil {
-    private static final int[] BLACK_GLASS_SLOTS = {
+    public static final int[] BLACK_GLASS_SLOTS = {
             0,1,2,3,4,5,6,7,8,
             18,19,20,21,22,23,24,25,26,
             36,37,38,39,40,41,42,43,44,
@@ -43,10 +44,23 @@ public class GuiUtil {
         return ItemUtil.createItem(material, name, List.of(TextUtil.format("&7클릭하여 모드 변경")));
     }
 
-    public static void fillDefault(Inventory inventory, int... exclude) {
+    public static void fillDefault(Inventory inventory, Shop shop, int... exclude) {
         Set<Integer> excludeSet = Arrays.stream(exclude).boxed().collect(Collectors.toSet());
-        inventory.setItem(45, PREV_BTN);
-        inventory.setItem(53, NEXT_BTN);
+
+        int currentIndex = shop.getCurrentPageNode() != null ? shop.getCurrentPageNode().getIndex() + 1 : 1;
+        int totalPages = Math.max(shop.getPageCount(), 1);
+        currentIndex = Math.min(currentIndex, totalPages);
+
+        System.out.println("[DEBUG] fillDefault: currentIndex=" + currentIndex + ", totalPages=" + totalPages);
+
+        ItemStack prev = ItemUtil.createItem(Material.PAPER,
+                TextUtil.format("&a이전 페이지 &7(" + currentIndex + "/" + totalPages + ")"));
+        ItemStack next = ItemUtil.createItem(Material.PAPER,
+                TextUtil.format("&a다음 페이지 &7(" + currentIndex + "/" + totalPages + ")"));
+
+        inventory.setItem(45, prev);
+        inventory.setItem(53, next);
+
         for (int slot : BLACK_GLASS_SLOTS) {
             if (excludeSet.contains(slot)) continue;
             inventory.setItem(slot, BLACK_GLASS);

@@ -15,7 +15,7 @@ public class ShopGUI {
     public static void open(Player player, Shop shop) {
         Inventory inv = Bukkit.createInventory(null, 54, TextUtil.format("&8" + shop.getShopName()));
 
-        GuiUtil.fillDefault(inv);
+        GuiUtil.fillDefault(inv, shop);
 
         ShopPage page = shop.getCurrentPage();
         List<ShopItem> items = page.getItems();

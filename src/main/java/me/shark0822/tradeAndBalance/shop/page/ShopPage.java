@@ -7,16 +7,13 @@ import java.util.Collections;
 import java.util.List;
 
 public class ShopPage {
-    private static final int MAX_ITEMS = 9;
-
     private final List<ShopItem> items;
 
     public ShopPage() {
-        this.items = new ArrayList<>(MAX_ITEMS);
+        this.items = new ArrayList<>();
     }
 
     public boolean addItem(ShopItem item) {
-        if (items.size() >= MAX_ITEMS) return false;
         return items.add(item);
     }
 
@@ -37,10 +34,6 @@ public class ShopPage {
 
     public int getSize() {
         return items.size();
-    }
-
-    public boolean isFull() {
-        return items.size() >= MAX_ITEMS;
     }
 
     public boolean isEmpty() {

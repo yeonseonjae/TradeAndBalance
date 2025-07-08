@@ -54,6 +54,7 @@ public class Shop {
     }
 
     public void addPage(ShopPage page) {
+        System.out.println("[DEBUG] addPage called with nextPageIndex: " + nextPageIndex);
         PageNode newNode = new PageNode(nextPageIndex++, page);
         if (head == null) {
             head = newNode;
@@ -67,10 +68,18 @@ public class Shop {
             newNode.setNext(head);
             head.setPrev(newNode);
         }
+        System.out.println("[DEBUG] Page added with index: " + newNode.getIndex());
     }
 
     public PageNode getCurrentPageNode() {
-        if (current == null && head != null) current = head;
+        if (current == null && head != null) {
+            current = head;
+        }
+        if (current == null) {
+            ShopPage newPage = new ShopPage();
+            addPage(newPage);
+            current = head;
+        }
         return current;
     }
 
@@ -87,63 +96,84 @@ public class Shop {
 
     public void nextPage() {
         if (current == null) return;
-
-        PageNode next = current.getNext();
-        if (next == current) {
-            ShopPage newPage = new ShopPage();
-            addPage(newPage);
-            next = current.getNext();
-        }
-        current = next;
+        current = current.getNext();
     }
 
     public void prevPage() {
-        if (current == null) return;
+        if (current == null || current.getPrev() == null) return;
+        current = current.getPrev();
+    }
 
-        PageNode prev = current.getPrev();
-        if (prev == current) {
+    public void addNextPage() {
+        if (current == null || head == null) {
             ShopPage newPage = new ShopPage();
             addPage(newPage);
-            prev = current.getPrev();
+            current = head;
+            current.markAsProcessed(); // 초기 페이지 처리 완료
+            System.out.println("[DEBUG] addNextPage: created initial page, currentIndex=" + current.getIndex() + ", totalPages=" + getPageCount());
+            return;
         }
-        current = prev;
+
+        PageNode next = current.getNext();
+        if (next != head) {
+            current = next;
+            System.out.println("[DEBUG] addNextPage: moved to existing page, currentIndex=" + current.getIndex() + ", totalPages=" + getPageCount());
+        } else {
+            ShopPage newPage = new ShopPage();
+            addPage(newPage);
+            current = head.getPrev(); // 새 페이지로 이동
+            System.out.println("[DEBUG] addNextPage: added new page, currentIndex=" + current.getIndex() + ", totalPages=" + getPageCount());
+        }
     }
 
     public void removeEmptyPages() {
-        if (head == null) return;
+        if (head == null) {
+            System.out.println("[DEBUG] removeEmptyPages: no pages to remove");
+            return;
+        }
 
         PageNode node = head;
         boolean checkedAll = false;
+        int initialPageCount = getPageCount();
+        System.out.println("[DEBUG] removeEmptyPages: starting with " + initialPageCount + " pages");
 
         while (!checkedAll) {
             PageNode nextNode = node.getNext();
-
-            // 비어있으면 삭제
-            if (node.getPage().isEmpty()) {
-                // 단일 노드면 모두 삭제 후 종료
-                if (node.getNext() == node) {
-                    head = null;
-                    current = null;
-                    nextPageIndex = 0;
+            if (node.getPage().isEmpty() && !node.isNewlyAdded()) {
+                if (getPageCount() <= 1) {
+                    System.out.println("[DEBUG] removeEmptyPages: keeping last page (index=" + node.getIndex() + ")");
                     break;
-                } else {
-                    // 노드 연결 제거
-                    node.getPrev().setNext(node.getNext());
-                    node.getNext().setPrev(node.getPrev());
-
-                    // head나 current가 삭제 노드면 업데이트
-                    if (node == head) {
-                        head = node.getNext();
-                    }
-                    if (node == current) {
-                        current = node.getNext();
-                    }
                 }
+
+                System.out.println("[DEBUG] removeEmptyPages: removing empty page (index=" + node.getIndex() + ")");
+                node.getPrev().setNext(node.getNext());
+                node.getNext().setPrev(node.getPrev());
+
+                if (node == head) {
+                    head = node.getNext();
+                }
+                if (node == current) {
+                    current = node.getNext();
+                }
+
+                node = nextNode;
+                if (head == null) {
+                    System.out.println("[DEBUG] removeEmptyPages: all pages removed");
+                    checkedAll = true;
+                } else if (node == head) {
+                    checkedAll = true;
+                }
+                continue;
             }
 
+            node.markAsProcessed(); // 페이지 처리 완료
             node = nextNode;
-            if (node == head) checkedAll = true;
+            if (node == head) {
+                checkedAll = true;
+            }
         }
+        nextPageIndex = getPageCount(); // 인덱스 재설정
+        System.out.println("[DEBUG] removeEmptyPages: finished with " + getPageCount() + " pages, nextPageIndex=" + nextPageIndex);
     }
 
     public void resetToFirstPage() {
@@ -178,10 +208,15 @@ public class Shop {
         PageNode node = head;
 
         do {
+            if (node == null) break; // 순환 끊김 방지
             count++;
             node = node.getNext();
-        } while (node != null && node != head);
+        } while (node != head);
 
         return count;
+    }
+
+    public PageNode getHead() {
+        return head;
     }
 }

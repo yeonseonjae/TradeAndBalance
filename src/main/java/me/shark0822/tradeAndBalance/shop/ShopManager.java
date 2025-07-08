@@ -1,6 +1,7 @@
 package me.shark0822.tradeAndBalance.shop;
 
 import me.shark0822.tradeAndBalance.shop.type.TradeType;
+import me.shark0822.tradeAndBalance.util.TextUtil;
 
 import java.util.*;
 
@@ -26,6 +27,21 @@ public class ShopManager {
 
     public Shop getShop(String id) {
         return shops.get(id);
+    }
+
+    public Shop getShopByName(String title) {
+        if (title == null) return null;
+
+        if (title.startsWith("&8[편집] ")) {
+            String shopName = title.substring("&8[편집] ".length());
+            for (Shop shop : shops.values()) {
+                if (shop.getShopName().equalsIgnoreCase(shopName)) {
+                    return shop;
+                }
+            }
+        }
+
+        return null;
     }
 
     public boolean hasShop(String id) {

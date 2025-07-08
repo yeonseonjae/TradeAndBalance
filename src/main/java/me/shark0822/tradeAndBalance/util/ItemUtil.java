@@ -33,4 +33,9 @@ public class ItemUtil {
         }
         return item;
     }
+
+    public static boolean isSimilar(ItemStack a, ItemStack b) {
+        if (a == null || b == null) return false;
+        return a.isSimilar(b);
+    }
 }
