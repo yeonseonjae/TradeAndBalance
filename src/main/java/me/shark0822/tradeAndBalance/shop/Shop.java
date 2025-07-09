@@ -133,46 +133,59 @@ public class Shop {
         }
 
         PageNode node = head;
-        boolean checkedAll = false;
         int initialPageCount = getPageCount();
         System.out.println("[DEBUG] removeEmptyPages: starting with " + initialPageCount + " pages");
 
-        while (!checkedAll) {
-            PageNode nextNode = node.getNext();
-            if (node.getPage().isEmpty() && !node.isNewlyAdded()) {
+        // 첫 번째 노드부터 순회
+        while (node != null) {
+            PageNode nextNode = node.getNext(); // 다음 노드 미리 저장
+
+            // 페이지가 비어 있고, 페이지 수가 1개 이상일 때 제거
+            if (node.getPage().isEmpty()) {
                 if (getPageCount() <= 1) {
                     System.out.println("[DEBUG] removeEmptyPages: keeping last page (index=" + node.getIndex() + ")");
                     break;
                 }
 
                 System.out.println("[DEBUG] removeEmptyPages: removing empty page (index=" + node.getIndex() + ")");
-                node.getPrev().setNext(node.getNext());
-                node.getNext().setPrev(node.getPrev());
 
-                if (node == head) {
-                    head = node.getNext();
+                // 노드 제거
+                if (node.getPrev() != null) {
+                    node.getPrev().setNext(node.getNext());
+                } else {
+                    head = node.getNext(); // head 갱신
                 }
+                if (node.getNext() != null) {
+                    node.getNext().setPrev(node.getPrev());
+                }
+
+                // current가 제거된 노드라면 다음 노드로 갱신
                 if (node == current) {
-                    current = node.getNext();
+                    current = nextNode != null ? nextNode : head;
                 }
-
-                node = nextNode;
-                if (head == null) {
-                    System.out.println("[DEBUG] removeEmptyPages: all pages removed");
-                    checkedAll = true;
-                } else if (node == head) {
-                    checkedAll = true;
-                }
-                continue;
             }
 
-            node.markAsProcessed(); // 페이지 처리 완료
             node = nextNode;
-            if (node == head) {
-                checkedAll = true;
+
+            // 순회 종료 조건
+            if (node == null || node == head) {
+                break;
             }
         }
-        nextPageIndex = getPageCount(); // 인덱스 재설정
+
+        // 페이지 인덱스 재설정
+        if (head != null) {
+            PageNode currentNode = head;
+            int index = 0;
+            do {
+                currentNode.setIndex(index++);
+                currentNode = currentNode.getNext();
+            } while (currentNode != null && currentNode != head);
+            nextPageIndex = index;
+        } else {
+            nextPageIndex = 0;
+        }
+
         System.out.println("[DEBUG] removeEmptyPages: finished with " + getPageCount() + " pages, nextPageIndex=" + nextPageIndex);
     }
 

@@ -20,8 +20,6 @@ public class GuiUtil {
             46,47,48,49,50,51,52};
 
     public static final ItemStack BLACK_GLASS = ItemUtil.createItem(Material.BLACK_STAINED_GLASS_PANE, Component.empty());
-    public static final ItemStack PREV_BTN = ItemUtil.createItem(Material.PAPER, TextUtil.format("이전 페이지"));
-    public static final ItemStack NEXT_BTN = ItemUtil.createItem(Material.PAPER, TextUtil.format("다음 페이지"));
     public static final ItemStack UNDO_BTN = ItemUtil.createItem(Material.PAPER, TextUtil.format("되돌리기"));
     public static final ItemStack REDO_BTN = ItemUtil.createItem(Material.PAPER, TextUtil.format("다시 실행"));
     public static ItemStack createTradeModeButton(TradeType mode) {

@@ -1,7 +1,39 @@
 shops:
-  test2:
-    shopName: '&c테스트2'
-    tradeType: BUY
   test1:
-    shopName: 테스트1
-    tradeType: BOTH
+    shopName: test1
+    tradeType: BUY
+    pages:
+      '0':
+        items:
+        - item:
+            DataVersion: 4325
+            id: minecraft:iron_sword
+            count: 1
+            schema_version: 1
+          price: 0.0
+          limitAmount: 0
+          limitType: NONE
+        - item:
+            DataVersion: 4325
+            id: minecraft:golden_sword
+            count: 1
+            schema_version: 1
+          price: 0.0
+          limitAmount: 0
+          limitType: NONE
+        - item:
+            DataVersion: 4325
+            id: minecraft:diamond_sword
+            count: 1
+            schema_version: 1
+          price: 0.0
+          limitAmount: 0
+          limitType: NONE
+        - item:
+            DataVersion: 4325
+            id: minecraft:netherite_sword
+            count: 1
+            schema_version: 1
+          price: 0.0
+          limitAmount: 0
+          limitType: NONE

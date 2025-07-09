@@ -37,7 +37,10 @@ public class ShopPage {
     }
 
     public boolean isEmpty() {
-        return items.isEmpty();
+        if (items == null) {
+            return true; // 리스트가 null이면 빈 것으로 간주
+        }
+        return items.isEmpty() || items.stream().allMatch(item -> item == null || item.getItemStack() == null);
     }
 
     public void clear() {

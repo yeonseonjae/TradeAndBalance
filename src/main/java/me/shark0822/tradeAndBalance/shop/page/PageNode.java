@@ -17,6 +17,10 @@ public class PageNode {
         return index;
     }
 
+//    public void setIndex(int i) {
+//        index = i;
+//    }
+
     public ShopPage getPage() {
         return page;
     }
