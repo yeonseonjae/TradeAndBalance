@@ -1,0 +1,15 @@
+shops:
+  test:
+    shopName: test
+    tradeType: BUY            #거래 방식 (BUY, SELL, BOTH)
+    pages:
+      '0':
+        items:
+          - item:
+              DataVersion: 4325
+              id: minecraft:grass_block
+              count: 1
+              schema_version: 1
+            price: 0.0        #가격
+            limitAmount: 0    #수량 제한시 제한량
+            limitType: NONE   #수량 제한 모드 (NONE, GLOBAL, PERSONAL)

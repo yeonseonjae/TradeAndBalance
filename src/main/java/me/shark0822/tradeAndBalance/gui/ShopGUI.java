@@ -26,7 +26,7 @@ public class ShopGUI {
         };
 
         for (int i = 0; i < Math.min(items.size(), itemSlots.length); i++) {
-            inv.setItem(itemSlots[i], items.get(i).getItemStack());
+            inv.setItem(itemSlots[i], items.get(i).getDisplayItem(false, shop.getTradeType()));
         }
 
         player.openInventory(inv);

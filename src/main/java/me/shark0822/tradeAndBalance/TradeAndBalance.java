@@ -19,11 +19,18 @@ public final class TradeAndBalance extends JavaPlugin {
         dataManager.loadShops(shopManager);
 
         if (getCommand("tradeandbalance") != null) getCommand("tradeandbalance").setExecutor(new TnbCommand(shopManager, dataManager));
-        getServer().getPluginManager().registerEvents(new ShopEditorListener(shopManager, dataManager), this);
+        getServer().getPluginManager().registerEvents(new ShopEditorListener(shopManager, dataManager, this), this);
     }
 
     @Override
     public void onDisable() {
-        dataManager.saveShops(shopManager);
+        if (shopManager != null && dataManager != null) {
+            shopManager.getAllShopsAsList().forEach(shop -> {
+                shop.removeEmptyPages();
+                System.out.println("[DEBUG] Removed empty pages for shop " + shop.getShopID());
+            });
+            dataManager.saveShops(shopManager);
+            getLogger().info("[YourPlugin] Saved shops.yml on disable");
+        }
     }
 }

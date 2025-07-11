@@ -65,8 +65,9 @@ public class DataManager {
                 List<Map<String, Object>> items = new ArrayList<>();
                 for (ShopItem item : page.getItems()) {
                     Map<String, Object> itemData = new HashMap<>();
-                    itemData.put("item", item.getItemStack().serialize());
-                    itemData.put("price", item.getPrice());
+                    itemData.put("item", item.getOriginalItem().serialize());
+                    itemData.put("buyPrice", item.getBuyPrice());
+                    itemData.put("sellPrice", item.getSellPrice());
                     itemData.put("limitType", item.getLimitType().name());
                     itemData.put("limitAmount", item.getLimitAmount());
                     items.add(itemData);
@@ -125,11 +126,12 @@ public class DataManager {
                                     String itemPath = path + ".pages." + pageKey + ".items." + itemKey;
 
                                     ItemStack itemStack = shopConfig.getItemStack(itemPath + ".item");
-                                    double price = shopConfig.getDouble(itemPath + ".price");
+                                    int buyPrice = shopConfig.getInt(itemPath + ".buyPrice");
+                                    int sellPrice = shopConfig.getInt(itemPath + ".sellPrice");
                                     LimitType limitType = LimitType.valueOf(shopConfig.getString(itemPath + ".limitType", "NONE"));
                                     int limitAmount = shopConfig.getInt(itemPath + ".limitAmount");
 
-                                    ShopItem shopItem = new ShopItem(itemStack, price, limitType, limitAmount);
+                                    ShopItem shopItem = new ShopItem(itemStack, buyPrice, sellPrice, limitType, limitAmount);
                                     page.addItem(shopItem);
                                 }
                             }

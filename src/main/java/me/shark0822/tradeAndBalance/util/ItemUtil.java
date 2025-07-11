@@ -18,6 +18,10 @@ public class ItemUtil {
         return createItem(material, displayName, lore, null);
     }
 
+    public static ItemStack createItem(Material material, List<Component> lore) {
+        return createItem(material, null, lore, null);
+    }
+
     public static ItemStack createItem(Material material, Component displayName, NamespacedKey namespacedKey) {
         return createItem(material, displayName, null, namespacedKey);
     }
@@ -26,7 +30,7 @@ public class ItemUtil {
         ItemStack item = new ItemStack(material);
         ItemMeta meta = item.getItemMeta();
         if (meta != null) {
-            meta.displayName(displayName);
+            if (displayName != null) meta.displayName(displayName);
             if (lore != null) meta.lore(lore);
             if (namespacedKey != null) meta.setItemModel(namespacedKey);
             item.setItemMeta(meta);

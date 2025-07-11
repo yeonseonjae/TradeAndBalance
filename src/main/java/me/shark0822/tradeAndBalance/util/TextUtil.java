@@ -13,21 +13,28 @@ public class TextUtil {
     private static final LegacyComponentSerializer legacySerializer = LegacyComponentSerializer.legacyAmpersand();
 
     private static final Map<String, String> CUSTOM_COLOR_MAP = Map.ofEntries(
-            Map.entry("RED", "&c"),
-            Map.entry("GREEN", "&a"),
+            Map.entry("BLACK", "&0"),
+            Map.entry("DARK_BLUE", "&1"),
+            Map.entry("DARK_GREEN", "&2"),
+            Map.entry("DARK_AQUA", "&3"),
+            Map.entry("DARK_RED", "&4"),
+            Map.entry("DARK_PURPLE", "&5"),
+            Map.entry("GOLD", "&6"),
+            Map.entry("GRAY", "&7"),
+            Map.entry("DARK_GRAY", "&8"),
             Map.entry("BLUE", "&9"),
+            Map.entry("GREEN", "&a"),
+            Map.entry("AQUA", "&b"),
+            Map.entry("RED", "&c"),
+            Map.entry("LIGHT_PURPLE", "&d"),
             Map.entry("YELLOW", "&e"),
             Map.entry("WHITE", "&f"),
-            Map.entry("BLACK", "&0"),
-            Map.entry("GRAY", "&7"),
-            Map.entry("DARK_RED", "&4"),
-            Map.entry("DARK_GREEN", "&2"),
-            Map.entry("DARK_BLUE", "&1"),
 
+            Map.entry("OBFUSCATED", "&k"),
             Map.entry("BOLD", "&l"),
+            Map.entry("STRIKETHROUGH", "&m"),
             Map.entry("UNDERLINE", "&n"),
             Map.entry("ITALIC", "&o"),
-            Map.entry("STRIKETHROUGH", "&m"),
             Map.entry("RESET", "&r")
     );
 
