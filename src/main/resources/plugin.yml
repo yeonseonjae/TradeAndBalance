@@ -1,0 +1,10 @@
+name: TradeAndBalance
+version: '1.21.8'
+main: me.shark0822.tradeAndBalance.TradeAndBalance
+api-version: '1.21'
+commands:
+  tradeandbalance:
+    aliases: tnb
+    permission: op
+  bank:
+    usage: /bank
